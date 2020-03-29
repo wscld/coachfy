@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178770725669",
+    "firebase_url": "https://coachfyapp.firebaseio.com",
+    "project_id": "coachfyapp",
+    "storage_bucket": "coachfyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178770725669:android:38b441a269484acd39e8cc",
+        "android_client_info": {
+          "package_name": "co.wscld.coachfy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178770725669-p426b0o0lchsm9j5d53tgp86ka8ft8qc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.wscld.coachfy",
+            "certificate_hash": "1643e6a0297e161a412e7c870b3e084a57698d7d"
+          }
+        },
+        {
+          "client_id": "178770725669-bjalcub5bk32tepcnl5mp81qhi5b1lah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLmJ2vyWjNO5XQidjmhBJMkiPAMuFW0Ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178770725669-bjalcub5bk32tepcnl5mp81qhi5b1lah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

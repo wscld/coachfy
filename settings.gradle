@@ -1,0 +1,2 @@
+rootProject.name='coachfy'
+include ':app'

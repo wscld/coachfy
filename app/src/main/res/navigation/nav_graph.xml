@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/treinosFragment">
+
+    <fragment
+        android:id="@+id/treinosFragment"
+        android:name="co.wscld.coachfy.TreinosFragment"
+        android:label="fragment_treinos"
+        tools:layout="@layout/fragment_treinos" >
+        <action
+            android:id="@+id/action_treinosFragment_to_exerciciosFragment"
+            app:destination="@id/exerciciosFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+        <action
+            android:id="@+id/action_treinosFragment_to_criarTreinoFragment2"
+            app:destination="@id/criarTreinoFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/treinosFragment"
+            app:popUpToInclusive="?android:attr/windowSwipeToDismiss" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciciosFragment"
+        android:name="co.wscld.coachfy.ExerciciosFragment"
+        android:label="fragment_exercicios"
+        tools:layout="@layout/fragment_exercicios" >
+        <action
+            android:id="@+id/action_exerciciosFragment_to_listaExerciciosFragment"
+            app:destination="@id/listaExerciciosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/criarExercicioFragment"
+        android:name="co.wscld.coachfy.CriarExercicioFragment"
+        android:label="fragment_criar_exercicio"
+        tools:layout="@layout/fragment_criar_exercicio" />
+    <fragment
+        android:id="@+id/criarTreinoFragment2"
+        android:name="co.wscld.coachfy.CriarTreinoFragment"
+        android:label="fragment_criar_treino"
+        tools:layout="@layout/fragment_criar_treino" />
+    <fragment
+        android:id="@+id/historicoFragment"
+        android:name="co.wscld.coachfy.HistoricoFragment"
+        android:label="fragment_historico"
+        tools:layout="@layout/fragment_historico" >
+        <action
+            android:id="@+id/action_historicoFragment_to_exerciciosFragment"
+            app:destination="@id/exerciciosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaExerciciosFragment"
+        android:name="co.wscld.coachfy.ListaExerciciosFragment"
+        android:label="fragment_lista_exercicios"
+        tools:layout="@layout/fragment_lista_exercicios" >
+        <action
+            android:id="@+id/action_listaExerciciosFragment_to_criarExercicioFragment"
+            app:destination="@id/criarExercicioFragment" />
+    </fragment>
+</navigation>
